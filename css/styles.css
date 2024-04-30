@@ -1,0 +1,66 @@
+html,*{
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    border:0 0 0 0;
+    font-size: 30px;
+    background-color:black;
+    color:white;
+}
+
+#iinnpp{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#calculator{
+    display:flex;
+    flex-direction: column;
+   text-align: center;
+    border:grey 2px solid;
+    width: 500px;
+  
+  
+  
+}
+.button.number{
+border:2px solid grey;
+margin-right: 10px;
+margin-bottom: 10px;
+
+font-size: 50px;
+}
+#calcOptions{
+    margin-left: 20px;
+align-content: center;
+text-align: center;
+display: flex;
+flex-direction: column;
+}
+#buttons{
+    display:flex;
+    flex-direction: column;
+}
+#test{
+
+    display: flex;
+    flex-direction: row;
+    padding:10px 10px 10px 10px;
+    justify-content: center;
+  
+}
+#bkground{
+    display: flex;
+    
+    width: 100%;
+    justify-content: center;
+}
+.columnsnumbers{
+    display:flex;
+    flex-direction: row;
+    align-self: center;
+    margin-bottom: 20px;
+   
+}
+#btnCalc{
+  
+    align-self: center;
+}
