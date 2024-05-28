@@ -1,31 +1,45 @@
 html,*{
     margin:0 0 0 0;
+   
     padding:0 0 0 0;
     border:0 0 0 0;
     font-size: 30px;
-    background-color:black;
+    
     color:white;
+}
+body{
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/173/558/desktop-wallpaper-dark-rain-landscape-drawing-trees-nature-forest-drawing.jpg');
+    background-position: center;
+    background-size:cover;
 }
 
 #iinnpp{
     margin-top: 20px;
     margin-bottom: 20px;
+    cursor:not-allowed;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    
+    width:200px;
 }
 #calculator{
     display:flex;
     flex-direction: column;
    text-align: center;
-    border:grey 2px solid;
-    width: 500px;
-  
+    border:white 6px solid;
+    border-radius: 30%;
+    width: 400px;
+  background-color: black;
   
   
 }
 .button.number{
-border:2px solid grey;
+border:2px solid white;
+border-radius: 15%;
 margin-right: 10px;
 margin-bottom: 10px;
-
+cursor: pointer;
 font-size: 50px;
 }
 #calcOptions{
@@ -61,6 +75,8 @@ flex-direction: column;
    
 }
 #btnCalc{
-  
+  background-color: transparent;
+  cursor:pointer;
+  border: 1px white solid;
     align-self: center;
 }
