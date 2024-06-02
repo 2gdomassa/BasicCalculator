@@ -1,5 +1,4 @@
 $(document).ready(function(){
-var numberRow=[];
 /* Troca fonte dos botões */
 $('.button.number').hover( 
 function(){$(this).css('color','grey')},
@@ -8,23 +7,57 @@ function(){$(this).css('color','white')}
     refreshInput($(this).prop('id'));
 })
 
-function soma(num1, num2){
-    return num1 + num2;
+let op;
+let n1;
+let n2;
+
+$('.operator').click(function(){
+    if($(this).text() === '+'){
+        op = '+';
+        n1 = parseInt($('#iinnpp').val());  
+        $("#iinnpp").val('');     
+    } 
+    if($(this).text() === '-'){
+        op = '-';
+        n1 = parseInt($('#iinnpp').val());       
+        $("#iinnpp").val('');
+    } 
+    if($(this).text() === 'X'){
+        op = 'X';
+        n1 = parseInt($('#iinnpp').val());       
+        $("#iinnpp").val('');
+    } 
+    if($(this).text() === '/'){
+        op = '/';
+        n1 = parseInt($('#iinnpp').val());       
+        $("#iinnpp").val('');
+    } 
+    
+    
+    
+});
+
+$('#btnCalc').click(function(){
+  n2 = parseInt($('#iinnpp').val());
+  if (op === '+'){
+$('#iinnpp').val(n1+n2);
+  }
+  if(op === '-'){
+  $("#iinnpp").val(n1-n2)  
 }
-function minus(num1,num2){
-    return num1 - num2;
-}
-function multiplication(num1,num2){
-    return num1 * num2;
-}
-function division(num1,num2){
-    return num1 / num2;
-}
+if(op === 'X'){
+    $("#iinnpp").val(n1*n2)  
+  }
+  if(op === '/'){
+    $("#iinnpp").val(n1/n2)  
+  }
+})
+
+
+
 function refreshInput(num2){
     let one = $("#iinnpp").val();
-    $('#iinnpp').val(one+num2);
-    
-    
+    $('#iinnpp').val(one+num2);    
 }
 
 

@@ -8,8 +8,7 @@ html,*{
     color:white;
 }
 body{
-    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/173/558/desktop-wallpaper-dark-rain-landscape-drawing-trees-nature-forest-drawing.jpg');
-    background-position: center;
+ background-color: white;
     background-size:cover;
 }
 
@@ -41,6 +40,16 @@ margin-right: 10px;
 margin-bottom: 10px;
 cursor: pointer;
 font-size: 50px;
+}
+.operator{
+ 
+        border:2px solid white;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-size: 50px;
+        width: 100px;
+        
 }
 #calcOptions{
     margin-left: 20px;
@@ -75,8 +84,14 @@ flex-direction: column;
    
 }
 #btnCalc{
-  background-color: transparent;
-  cursor:pointer;
+  background-color: white;
+  color:black;
   border: 1px white solid;
     align-self: center;
+    margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-size: 50px;
+        width: 100px;
+    
 }
